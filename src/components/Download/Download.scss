@@ -1,0 +1,114 @@
+@import "../../sass/variables";
+.download {
+  padding-top: 100px;
+  &Screen {
+    width: 100%;
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+  &Content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    width: 100%;
+    h2 {
+      font-size: 34px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #646464;
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      .button {
+        border: 1px solid lightgrey;
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+  .banner {
+    margin-top: 100px;
+    .saleOff {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      form {
+        width: 95%;
+        z-index: 1022;
+        transform: translateX(-10%);
+        .formGroup {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 60px;
+          input {
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding: 20px;
+            flex: 1;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            &::placeholder {
+              color: #b1b1b1;
+            }
+          }
+          .button {
+            height: 100%;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 739px) {
+  .download {
+    &Content {
+      max-width: 100%;
+      text-align: center;
+      & > * {
+        width: 100%;
+      }
+      .buttons {
+        justify-content: center;
+      }
+    }
+    .banner {
+      margin-top: 0;
+      .text {
+        display: none;
+      }
+      .saleOff {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        form {
+          opacity: 1;
+          transform: translateX(0);
+          .formGroup {
+            input {
+              border: 2px solid $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

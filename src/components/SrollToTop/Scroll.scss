@@ -1,0 +1,23 @@
+.scrollTop {
+  width: 60px;
+  height: 60px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 50px;
+  color: rgb(204, 204, 204);
+  cursor: pointer;
+  z-index: 100000;
+}
+@media (max-width: 800px) {
+  .scrollTop {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    bottom: 5px;
+  }
+}

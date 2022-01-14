@@ -1,0 +1,23 @@
+.countries {
+  padding-top: 100px;
+  .slogan {
+    font-size: 34px;
+    font-weight: 700;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  ul {
+    li {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      margin-bottom: 20px;
+      color: #666666;
+    }
+  }
+}
+@media (max-width: 739px) {
+  .countries {
+    display: none;
+  }
+}

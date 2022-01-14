@@ -1,0 +1,6 @@
+export const fish = require('./fish.png')
+export const burger = require('./burger.png')
+export const bento = require('./bento.png')
+export const indianCusine = require('./indianCusine.png')
+export const pizza = require('./pizza.png')
+export const tikka = require('./tikka.png')

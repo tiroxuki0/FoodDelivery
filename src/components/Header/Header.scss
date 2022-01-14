@@ -1,0 +1,162 @@
+.header {
+  --orange: #ff562b;
+  &Inner {
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon {
+    width: 134px;
+    height: 28px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &Menu {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      li {
+        a {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: calc(17 / 14);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &Signup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    .signUp {
+      width: 84px;
+      height: 42px;
+      background-color: black;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      span {
+        color: white;
+      }
+    }
+    .cart,
+    .bars {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--orange);
+      border-radius: 12px;
+      position: relative;
+      z-index: 2;
+      font-size: 15px;
+      cursor: pointer;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 65%;
+        height: 65%;
+        border-radius: 100rem;
+        background-color: #fff;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: var(--orange);
+        z-index: -2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .bars {
+      color: white;
+      display: none;
+      &:before {
+        display: none;
+      }
+      &:after {
+        background-color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .header {
+    .icon {
+      width: 118px;
+      height: 24px;
+    }
+    &Signup {
+      .bars {
+        display: flex;
+      }
+      .bars,
+      .cart {
+        width: 37.8px;
+        height: 37.8px;
+        font-size: 12px;
+        &:after {
+          border-radius: 8px;
+        }
+      }
+      .signUp {
+        border-radius: 8px;
+        font-size: 12px;
+        width: 75.6px;
+        height: 37.8px;
+      }
+    }
+    &Menu {
+      position: fixed;
+      top: 55px;
+      width: 100%;
+      left: 0;
+      box-shadow: rgb(149 157 165 / 20%) 2px 6px 8px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: clip-path 0.5s ease;
+      background-color: white;
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+      ul {
+        flex-direction: column;
+        gap: 0;
+        margin-left: -4px;
+        li {
+          width: 100%;
+          a {
+            padding: 10px 0px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            color: var(--orange);
+            border-bottom: 1px solid rgb(236, 236, 236);
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

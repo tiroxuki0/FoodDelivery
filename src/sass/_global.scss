@@ -1,0 +1,212 @@
+.banner {
+  margin: 20px auto;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 250px;
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 80px;
+    position: relative;
+    &.green {
+      color: $green;
+      background-color: $green;
+    }
+    &.orange {
+      color: $orange;
+      background-color: $orange;
+    }
+    &.yellow {
+      color: $yellow;
+      background-color: $yellow;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: currentColor;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 65px;
+      transform: skewX(-20deg) translateY(-1px);
+      z-index: 100;
+    }
+    h2,
+    p {
+      color: white;
+    }
+  }
+  .saleOff {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    &.green {
+      background-color: $green;
+      color: $green;
+    }
+    &.orange {
+      color: $orange;
+      background-color: $orange;
+    }
+    &.yellow {
+      color: $yellow;
+      background-color: $yellow;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: currentColor;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 65px;
+      transform: skewX(-20deg) translateY(1px);
+    }
+    img {
+      flex: 1.2;
+      position: relative;
+      z-index: 1001;
+      &:nth-child(2),
+      &:nth-child(5) {
+        flex: 0;
+        margin: 20px 20px;
+      }
+      &:nth-child(1) {
+        transform: scale(0.9) translate(50%, 10%);
+        margin-bottom: 0;
+      }
+      &:nth-child(3) {
+        margin-top: 40px;
+      }
+      &:nth-child(4) {
+        margin-top: 160px;
+        transform: scale(0.8);
+      }
+    }
+    .salePercen {
+      color: white;
+      position: absolute;
+      top: 35px;
+      transform: translateX(20%) rotate(-30deg);
+      font-size: 40px;
+      flex-shrink: 0;
+    }
+  }
+}
+.title {
+  font-family: "Seaweed Script";
+  font-size: 44px;
+  font-weight: 400;
+  color: $orange;
+  font-size: 40px;
+  line-height: calc(50 / 44);
+  text-align: center;
+  width: 100%;
+}
+.slogan {
+  max-width: 500px;
+  font-size: 52px;
+  line-height: calc(72 / 62);
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto;
+}
+.button {
+  cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  border: none;
+  &.green {
+    background-color: $green;
+    .icon {
+      color: $green;
+    }
+  }
+  &.orange {
+    background-color: $orange;
+    .icon {
+      color: $orange;
+    }
+  }
+  &.yellow {
+    background-color: $yellow;
+    .icon {
+      color: $yellow;
+    }
+  }
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+  .icon {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 739px) {
+  .slogan {
+    font-size: 35px;
+  }
+}
+@media (max-width: 739px) {
+  .banner {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    .text {
+      position: absolute;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      padding: 0px 40px;
+      &:before {
+        display: none;
+      }
+    }
+    .saleOff {
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      width: 100%;
+      position: absolute;
+      .salePercen {
+        font-size: 80px;
+        transform: translate(27%, -10%) rotate(18deg);
+        line-height: 65px;
+      }
+      img {
+        &:nth-child(1) {
+          transform: scale(0.5) translate(50%, -30%);
+        }
+      }
+      &:before {
+        display: none;
+      }
+      & > * {
+        opacity: 0.6;
+      }
+    }
+  }
+}

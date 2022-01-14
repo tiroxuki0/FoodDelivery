@@ -1,0 +1,166 @@
+@import "../../sass/variables";
+
+.recommend {
+  margin-top: 70px;
+  &Content {
+    padding: 80px 0px 80px 0px;
+    overflow: hidden;
+    position: relative;
+    .heading {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      h3 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: calc(40 / 34);
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .swiper {
+      overflow: visible;
+      position: initial;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+      border-radius: 100rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(238, 238, 238);
+      margin-top: 0;
+      &:after {
+        font-size: 20px;
+        font-weight: 1000;
+        color: $orange;
+      }
+    }
+    .swiper-button-prev {
+      left: 0;
+      margin-left: calc(100% - 90px);
+      top: 0;
+    }
+    .swiper-button-next {
+      right: 0;
+      top: 0;
+    }
+    .swiper-pagination-bullet {
+      background-color: $orange;
+    }
+    .foodItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      position: relative;
+      height: 150px;
+      background-color: rgb(241, 241, 241);
+      padding: 20px;
+      cursor: pointer;
+      .descItem {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        h3 {
+          font-weight: 700;
+          font-size: 20px;
+        }
+        div {
+          span {
+            color: $lightgrey;
+          }
+          p {
+            span {
+              color: $orange;
+              font-weight: 700;
+            }
+            color: $orange;
+            font-weight: 700;
+          }
+        }
+      }
+      .descImage {
+        flex-shrink: 0;
+        img {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .recommend {
+    &Content {
+      .foodItem {
+        .descItem {
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 739px) {
+  .recommend {
+    margin-top: 20px;
+    &Top {
+      margin-bottom: 0;
+      .heading {
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .controls {
+        display: none;
+      }
+    }
+    &Content {
+      padding: 80px 80px 80px 0px;
+      .foodItem {
+        .descItem {
+          h3 {
+            font-size: 20px;
+          }
+          div {
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .recommend {
+    &Content {
+      .foodItem {
+        .descItem {
+          flex: 1;
+        }
+        .descImage {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

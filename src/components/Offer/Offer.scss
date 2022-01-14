@@ -1,0 +1,38 @@
+@import "../../sass/variables";
+.offer {
+  padding-top: 15px;
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  .slogan {
+    width: 100%;
+    text-align: center;
+  }
+  &List {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    .swiper {
+      position: initial;
+      .swiper-pagination-bullet {
+        background-color: $orange;
+      }
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
+      img {
+      }
+      h3 {
+      }
+      span {
+        margin-top: -16px;
+        text-align: center;
+      }
+    }
+  }
+}
