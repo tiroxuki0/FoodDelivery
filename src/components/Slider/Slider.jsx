@@ -91,8 +91,6 @@ function Slider(){
                     pagination={{ clickable: true }}
                     spaceBetween= {20}
                     slidesPerView={isPClowSolution ? 4 : isTablet ? 3 : isMobile ? 2 : 1}
-                    /* onSlideChange={() => console.log('slide change')} */
-                    /* onSwiper={(swiper) => console.log(swiper)} */
                   >
                     {
                       foods.map((food,index)=>{
