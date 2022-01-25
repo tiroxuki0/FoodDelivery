@@ -120,3 +120,12 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .location {
+    &Content {
+      .heading {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
