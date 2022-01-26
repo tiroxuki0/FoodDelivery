@@ -1,7 +1,23 @@
 .header {
   --orange: #ff562b;
+  transition: all 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 10000;
+  height: 70px;
+  transform: translateX(-50%);
+  &.grid.wide {
+    &.fixed {
+      max-width: 100vw;
+      background-color: white;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 10px;
+      padding: 0px 30px;
+    }
+  }
   &Inner {
-    height: 70px;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
   }
@@ -108,6 +124,11 @@
 
 @media (max-width: 740px) {
   .header {
+    &.grid.wide {
+      &.fixed {
+        padding: 0px;
+      }
+    }
     .icon {
       width: 118px;
       height: 24px;

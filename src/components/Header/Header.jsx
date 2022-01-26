@@ -17,8 +17,10 @@ function Header(){
     window.addEventListener('scroll', () => {
       if(window.scrollY > 50){
         setShowScrollToTop(!showScrollToTop)
+        $('.header').classList.add('fixed')
       }else{
         setShowScrollToTop(false)
+        $('.header').classList.remove('fixed')
       }
     })
     return ()=>{
