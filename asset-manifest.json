@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/FoodDelivery/static/css/main.ba3cde4b.css",
+    "main.js": "/FoodDelivery/static/js/main.ce030c30.js",
+    "static/js/787.f12da124.chunk.js": "/FoodDelivery/static/js/787.f12da124.chunk.js",
+    "static/media/home.png": "/FoodDelivery/static/media/home.addd738ee5a71bf04ab0.png",
+    "static/media/boltfood.png": "/FoodDelivery/static/media/boltfood.d926b27f293daa276aa5.png",
+    "static/media/Screen.png": "/FoodDelivery/static/media/Screen.482579a3b75bd19d312b.png",
+    "static/media/indianCusine.png": "/FoodDelivery/static/media/indianCusine.c94856bd4d9d9470acd7.png",
+    "static/media/bento.png": "/FoodDelivery/static/media/bento.f82643e19582b42878fd.png",
+    "static/media/pizza.png": "/FoodDelivery/static/media/pizza.0342a135647894c3174e.png",
+    "static/media/tikka.png": "/FoodDelivery/static/media/tikka.c32240ff5e17dce9b062.png",
+    "static/media/burger.png": "/FoodDelivery/static/media/burger.a383b75c6d697d0e4797.png",
+    "static/media/fish.png": "/FoodDelivery/static/media/fish.e69d3f92218530f4b1fe.png",
+    "static/media/cocktail.png": "/FoodDelivery/static/media/cocktail.2aec4d365cf5b975059e.png",
+    "static/media/together.png": "/FoodDelivery/static/media/together.c076e8d6c42b4e3f030f.png",
+    "static/media/potato.png": "/FoodDelivery/static/media/potato.7c34225799c524521029.png",
+    "static/media/chicken.png": "/FoodDelivery/static/media/chicken.db1d71f989b7174fda66.png",
+    "static/media/motorbike.png": "/FoodDelivery/static/media/motorbike.f081a57b3ab43377bdd2.png",
+    "static/media/bigBowl.png": "/FoodDelivery/static/media/bigBowl.87eb36b68e8bf98d489b.png",
+    "static/media/Cart.svg": "/FoodDelivery/static/media/Cart.03b716b0a8da557bc699f26172e22471.svg",
+    "static/media/apple-brands.svg": "/FoodDelivery/static/media/apple-brands.3e208bda7fa6a756d88427e0eb2123f7.svg",
+    "index.html": "/FoodDelivery/index.html",
+    "static/media/facebook-brands.svg": "/FoodDelivery/static/media/facebook-brands.033c50dd0b16de1fef2a20dfe6e465d4.svg",
+    "static/media/google-brands.svg": "/FoodDelivery/static/media/google-brands.77a59cd88e6533df0df28f698714b1bd.svg",
+    "main.ba3cde4b.css.map": "/FoodDelivery/static/css/main.ba3cde4b.css.map",
+    "main.ce030c30.js.map": "/FoodDelivery/static/js/main.ce030c30.js.map",
+    "787.f12da124.chunk.js.map": "/FoodDelivery/static/js/787.f12da124.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba3cde4b.css",
+    "static/js/main.ce030c30.js"
+  ]
+}
